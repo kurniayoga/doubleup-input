@@ -1,3 +1,5 @@
+import './box.scss';
+
 interface BoxProps {
     title: string,
     children?: React.ReactNode

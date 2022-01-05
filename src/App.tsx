@@ -28,22 +28,25 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Medirecords Front end Code Challenge</h1>
-      <h2 className="mt-2">Please try to implement following within one hour</h2>
+      <div className="header">
+        <h1>Medirecords Front end Code Challenge</h1>
+        <h2 className="mt-2">Please try to implement following within one hour</h2>
+      </div>
       
       <div className="row">
         <div className="column">
           <Box title="Input">
             <div className="component-form-group">
               <label>Array</label>
-              <input value={input} onChange={handleChange} aria-label="array-input" />
+              <input type="text" value={input} onChange={handleChange} aria-label="array-input" />
             </div>
           </Box>
-
-          <Box title="Input">
+        </div>
+        <div className="column">
+          <Box title="Output">
             <div className="component-form-group">
               <label>Output</label>
-              <input value={result} disabled={true} aria-label="result-input" />
+              <input type="text" value={result} disabled={true} aria-label="result-input" />
             </div>
           </Box>
         </div>

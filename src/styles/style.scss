@@ -1,11 +1,55 @@
 @import './variables';
+@import './fonts';
 
-.row {
-    display: flex;
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.column {
-    flex: 0 0 50%;
-    width: 50%;
-    max-width: 50%;
+.App {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    
+    h2 {
+        color: $textGrey;
+    }
+}
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+
+    @media screen and (max-width: 500px) {
+       flex-wrap: wrap;
+    }
+
+    .column {
+        width: 50%;
+        max-width: 50%;
+        padding: 15px;
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+.component-form-group {
+    input[type="text"] {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        color: $textGrey;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    label {
+        margin-bottom: 1.5rem;
+        display: block;
+        color: $textGrey;
+    }
 }

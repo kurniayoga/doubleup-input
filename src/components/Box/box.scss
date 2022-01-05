@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.box-wrapper {
+    border: 1px solid black;
+    padding: 30px;
+
+    h3 {
+        color: $textColor;
+        font-weight: bold;
+    }
+}

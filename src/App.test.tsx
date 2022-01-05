@@ -27,7 +27,7 @@ test ('Double up input array from Array Input and Show it in Result', () => {
     const { input } = setupInput();
     const { output } = setupOutput();
 
-    fireEvent.change(input, {target: {value: '1,2,3'}});
+    fireEvent.change(input, {target: {value: '3,4,5,6'}});
 
-    expect(output.value).toBe('2,4,6');
+    expect(output.value).toBe('6,8,10,12');
 })
